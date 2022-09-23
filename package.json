@@ -1,7 +1,7 @@
 {
-  "name": "il-bastardo-next-template",
-  "version": "0.1.0",
-  "description": "Personal next template",
+  "name": "il-bastardo",
+  "version": "1.0.0",
+  "description": "Personal project to show something about myself",
   "main": "index.js",
   "repository": "git@github.com:decocco/il-bastardo-next-template.git",
   "author": "decocco <jeremy.galarce.u@gmail.com>",
