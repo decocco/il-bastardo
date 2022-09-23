@@ -1,0 +1,27 @@
+{
+  "plugins": ["@typescript-eslint"],
+  "ignorePatterns": ["next.config.js", "next-i18next.config.js"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": false,
+        "shorthandFirst": true,
+        "ignoreCase": true,
+        "reservedFirst": ["key"]
+      }
+    ]
+  }
+}

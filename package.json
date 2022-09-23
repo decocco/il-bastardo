@@ -1,0 +1,42 @@
+{
+  "name": "il-bastardo-next-template",
+  "version": "0.1.0",
+  "description": "Personal next template",
+  "main": "index.js",
+  "repository": "git@github.com:decocco/il-bastardo-next-template.git",
+  "author": "decocco <jeremy.galarce.u@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "framer-motion": "^7.2.1",
+    "next": "^11.0.0",
+    "next-i18next": "^12.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.18",
+    "@types/react": "17.0.30",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "4.8.3"
+  },
+  "resolutions": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
+  }
+}
