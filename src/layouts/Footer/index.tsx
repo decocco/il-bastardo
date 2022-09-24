@@ -1,15 +1,32 @@
 import React from "react";
-import { Box, Text } from "@chakra-ui/react";
-import { useTranslation } from "next-i18next";
+import { Flex } from "@chakra-ui/react";
+import { SocialIcon } from "react-social-icons";
+import { Logo } from "components/commons/Logo";
+import { colors } from "theme";
 
 const Footer: React.FC = () => {
-  const { t } = useTranslation("common");
-
   return (
-    <Box bg="red">
-      <Text>footer{t("language")}</Text>
-      <div></div>
-    </Box>
+    <Flex
+      bg="black"
+      color="white"
+      direction="row"
+      fontFamily="ubuntu"
+      fontSize="20px"
+      px="100"
+      py="5"
+    >
+      <SocialIcon
+        bgColor={colors.white}
+        url="https://linkedin.com/in/jeremy-galarce-urbina-96590114b"
+      />
+      <SocialIcon bgColor={colors.white} url="https://github.com/decocco" />
+      <SocialIcon
+        bgColor={colors.white}
+        url="https://www.instagram.com/decocco.js/"
+      />
+
+      <Logo ml="auto" />
+    </Flex>
   );
 };
 
