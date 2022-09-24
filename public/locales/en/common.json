@@ -1,3 +1,6 @@
 {
-    "language":"english"
-}  
+  "aboutme": "About Me",
+  "blog": "Blog",
+  "projects": "Projects",
+  "language": "english"
+}
