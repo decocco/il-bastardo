@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 const AppLayout: React.FC = ({ children }) => (
   <>
     <Navbar />
-
     {children}
     <Footer />
   </>

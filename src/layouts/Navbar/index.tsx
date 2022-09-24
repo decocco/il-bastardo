@@ -1,13 +1,22 @@
-import { Box, Text } from "@chakra-ui/react";
-import { useTranslation } from "next-i18next";
+import { Flex } from "@chakra-ui/react";
+import { Logo } from "components/commons/Logo";
+import LanguageSelector from "./LanguageSelector";
+import NavbarOptions from "./NavbarOptions";
 
 const Navbar: React.FC = () => {
-  const { t } = useTranslation("common");
-
   return (
-    <Box bg="red">
-      <Text>navbar{t("language")}</Text>
-    </Box>
+    <Flex
+      bg="black"
+      direction="row"
+      fontFamily="ubuntu"
+      fontSize="20px"
+      px="100"
+      py="5"
+    >
+      <Logo mr="auto" />
+      <NavbarOptions />
+      <LanguageSelector />
+    </Flex>
   );
 };
 
