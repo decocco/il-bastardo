@@ -4,10 +4,10 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { defaultLocale } from "lib/constants";
 
-const Home: NextPage = () => {
+const AboutMe: NextPage = () => {
   return (
     <Box h="2000px">
-      <Text>Home</Text>
+      <Text>AboutMe</Text>
     </Box>
   );
 };
@@ -20,4 +20,4 @@ export async function getStaticProps({ locale = defaultLocale }) {
   };
 }
 
-export default Home;
+export default AboutMe;
