@@ -24,7 +24,7 @@ export const Logo: React.FC<Props> = ({ ml, mr }) => {
       transform="rotate(-7deg)"
     >
       <Text color="white" fontFamily="italic" fontSize="40px">
-        Il Basterdo
+        Il Bastardo
       </Text>
     </Flex>
   );
