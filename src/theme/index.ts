@@ -7,6 +7,17 @@ const config: ThemeConfig = {
   useSystemColorMode: false,
 };
 
-const theme = extendTheme({ config, colors, fonts });
+const theme = extendTheme({
+  config,
+  colors,
+  fonts,
+  styles: {
+    global: {
+      body: {
+        fontFamily: "ubuntu",
+      },
+    },
+  },
+});
 
 export { theme, colors, fonts };
