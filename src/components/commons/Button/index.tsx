@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react";
+import { Button as ChakraButton, ButtonProps } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { colors } from "theme";
@@ -38,7 +38,7 @@ const disabledStyle = css`
   }
 `;
 
-const StyButton = styled(Button)`
+const StyledButton = styled(ChakraButton)`
   border-radius: ${({ borderRadius }) => borderRadius || "4px"};
   font-size: ${({ fsize }) => fsize};
   font-weight: ${({ fontWeight }) => fontWeight || "600"};
@@ -50,4 +50,12 @@ const StyButton = styled(Button)`
   ${({ disabled }) => disabled && disabledStyle}
 }`;
 
-export default StyButton;
+type Props = ButtonProps & {
+  priority: string;
+};
+
+export const Button: React.FC<Props> = ({ children, priority, ...rest }) => (
+  <StyledButton priority={priority} {...rest}>
+    {children}
+  </StyledButton>
+);
