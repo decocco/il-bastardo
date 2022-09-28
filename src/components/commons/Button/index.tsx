@@ -34,7 +34,21 @@ const disabledStyle = css`
   :hover {
     background-color: ${lightPrimary} !important;
     border: 2px solid ${lightPrimary} !important;
-    color: white !important;
+    color: white;
+  }
+`;
+
+const loadingStyle = css`
+  :hover {
+    background-color: ${primary} !important;
+    border: 2px solid ${primary};
+    color: white;
+  }
+`;
+
+const focusStyle = css`
+  :focus {
+    box-shadow: none;
   }
 `;
 
@@ -48,6 +62,8 @@ const StyledButton = styled(ChakraButton)`
   ${({ priority }) => priority === "primary" && primaryStyle}
   ${({ priority }) => priority === "secondary" && secondaryStyle}
   ${({ disabled }) => disabled && disabledStyle}
+  ${({ isLoading }) => isLoading && loadingStyle}
+  ${focusStyle}
 }`;
 
 type Props = ButtonProps & {

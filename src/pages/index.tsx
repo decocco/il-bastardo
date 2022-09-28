@@ -5,7 +5,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Home: NextPage = () => {
   return (
-    <Box h="2000px">
+    <Box>
       <Text>Home</Text>
     </Box>
   );
