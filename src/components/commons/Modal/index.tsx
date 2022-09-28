@@ -48,7 +48,7 @@ export const Modal: React.FC<Props> = ({
     size={size}
   >
     <ModalOverlay />
-    <ModalContent borderRadius={4}>
+    <ModalContent borderRadius={16}>
       <ModalHeader
         color="darkPrimary"
         fontSize="24px"

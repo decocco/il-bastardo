@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { colors } from "theme";
 
-const { primary, white, lightPrimary, lighter } = colors;
+const { primary, white, lightPrimary } = colors;
 
 const primaryStyle = css`
   background-color: ${primary};
@@ -17,13 +17,13 @@ const primaryStyle = css`
 `;
 
 const secondaryStyle = css`
-  background-color: ${lighter};
-  border: 2px solid ${lighter};
-  color: ${primary};
+  background-color: ${lightPrimary};
+  border: 2px solid ${lightPrimary};
+  color: ${white};
   :hover {
-    background-color: ${primary};
-    border-color: ${primary};
-    color: ${white};
+    background-color: ${white};
+    border-color: ${lightPrimary};
+    color: ${lightPrimary};
   }
 `;
 
@@ -39,10 +39,10 @@ const disabledStyle = css`
 `;
 
 const StyledButton = styled(ChakraButton)`
-  border-radius: ${({ borderRadius }) => borderRadius || "4px"};
+  border-radius: ${({ borderRadius }) => borderRadius || "16px"};
   font-size: ${({ fsize }) => fsize};
   font-weight: ${({ fontWeight }) => fontWeight || "600"};
-  max-width: ${({ maxW }) => maxW || "250px"};
+  max-width: ${({ maxW }) => maxW || "150px"};
   min-width: fit-content;
   width: ${({ width }) => (width ? width : "20vw")};
   ${({ priority }) => priority === "primary" && primaryStyle}

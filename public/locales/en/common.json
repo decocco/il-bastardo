@@ -2,5 +2,6 @@
   "aboutme": "About Me",
   "blog": "Blog",
   "projects": "Projects",
-  "language": "english"
+  "language": "english",
+  "sendMeAMessage": "Send me a message!"
 }

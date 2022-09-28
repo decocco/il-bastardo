@@ -1,17 +1,9 @@
+import { FormControl, FormLabel, ModalFooter } from "@chakra-ui/react";
+import { useTranslation } from "next-i18next";
 import React from "react";
-import {
-  Button,
-  FormControl,
-  FormLabel,
-  Input,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
-} from "@chakra-ui/react";
+import { Button } from "../Button";
+import { Input } from "../Input";
+import { Modal } from "../Modal";
 
 type Props = {
   initialRef: React.MutableRefObject<null>;
@@ -23,30 +15,33 @@ export const ContactModal: React.FC<Props> = ({
   initialRef,
   isOpen,
   onClose,
-}) => (
-  <Modal initialFocusRef={initialRef} isOpen={isOpen} onClose={onClose}>
-    <ModalOverlay />
-    <ModalContent>
-      <ModalHeader>Create your account</ModalHeader>
-      <ModalCloseButton />
-      <ModalBody pb={6}>
-        <FormControl>
-          <FormLabel>First name</FormLabel>
-          <Input placeholder="First name" ref={initialRef} />
-        </FormControl>
+}) => {
+  const { t } = useTranslation("common");
+  return (
+    <Modal
+      initialRef={initialRef}
+      isOpen={isOpen}
+      onClose={onClose}
+      title={t("sendMeAMessage")}
+    >
+      <FormControl>
+        <FormLabel>First name</FormLabel>
+        <Input placeholder="First name" ref={initialRef} />
+      </FormControl>
 
-        <FormControl mt={4}>
-          <FormLabel>Last name</FormLabel>
-          <Input placeholder="Last name" />
-        </FormControl>
-      </ModalBody>
+      <FormControl mt={4}>
+        <FormLabel>Last name</FormLabel>
+        <Input placeholder="Last name" />
+      </FormControl>
 
       <ModalFooter>
-        <Button colorScheme="blue" mr={3}>
+        <Button mr={3} priority="primary">
           Save
         </Button>
-        <Button onClick={onClose}>Cancel</Button>
+        <Button onClick={onClose} priority="secondary">
+          Cancel
+        </Button>
       </ModalFooter>
-    </ModalContent>
-  </Modal>
-);
+    </Modal>
+  );
+};
