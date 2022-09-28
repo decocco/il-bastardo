@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Flex, Text, keyframes } from "@chakra-ui/react";
-import { useRouter } from "next/router";
-import styled from "@emotion/styled";
+import { Flex, keyframes,Text } from "@chakra-ui/react";
 import { css } from "@emotion/react";
+import styled from "@emotion/styled";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 import { colors } from "theme";
 
 type Props = {

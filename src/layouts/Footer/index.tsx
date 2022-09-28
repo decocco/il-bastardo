@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
 import { Flex, useDisclosure } from "@chakra-ui/react";
-import { SocialIcon } from "react-social-icons";
-import { Logo } from "components/commons/Logo";
 import { ContactModal } from "components/commons/ContactModal";
+import { Logo } from "components/commons/Logo";
+import React, { useRef } from "react";
+import { SocialIcon } from "react-social-icons";
 import { colors } from "theme";
 
 const Footer: React.FC = () => {
