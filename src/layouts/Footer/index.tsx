@@ -1,9 +1,10 @@
-import { Flex, useDisclosure } from "@chakra-ui/react";
-import { ContactModal } from "components/commons/ContactModal";
-import { Logo } from "components/commons/Logo";
 import React, { useRef } from "react";
 import { SocialIcon } from "react-social-icons";
+import { Flex, useDisclosure } from "@chakra-ui/react";
 import { colors } from "theme";
+
+import { ContactModal } from "components/commons/ContactModal";
+import { Logo } from "components/commons/Logo";
 
 const Footer: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

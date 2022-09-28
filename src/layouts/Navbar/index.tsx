@@ -1,4 +1,5 @@
 import { Flex } from "@chakra-ui/react";
+
 import { Logo } from "components/commons/Logo";
 
 import LanguageSelector from "./LanguageSelector";
