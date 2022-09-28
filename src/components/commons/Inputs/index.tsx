@@ -1,4 +1,7 @@
-import { Input as ChakraInput } from "@chakra-ui/react";
+import {
+  Input as ChakraInput,
+  Textarea as ChakraTextarea,
+} from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { colors } from "theme";
@@ -31,4 +34,11 @@ export const Input = styled(ChakraInput)`
 	${basic}
   ${focus}
 	${hover}
+}`;
+
+export const Textarea = styled(ChakraTextarea)`
+	${basic}
+  ${focus}
+	${hover}
+  padding: 8px 16px;
 }`;
