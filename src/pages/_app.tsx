@@ -1,11 +1,11 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import { NextPage } from "next";
-import { AppProps } from "next/app";
-import { appWithTranslation } from "next-i18next";
 import "@fontsource/parisienne";
 import "@fontsource/ubuntu";
 
+import { ChakraProvider } from "@chakra-ui/react";
 import AppLayout from "layouts/AppLayout";
+import { NextPage } from "next";
+import { AppProps } from "next/app";
+import { appWithTranslation } from "next-i18next";
 import { theme } from "theme";
 
 const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
