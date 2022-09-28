@@ -1,6 +1,6 @@
+import React from "react";
 import { FormControl, FormLabel, ModalFooter } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import React from "react";
 
 import { Button } from "../Button";
 import { Input } from "../Input";

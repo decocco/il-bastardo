@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Modal as ChakraModal,
@@ -8,7 +9,6 @@ import {
   ModalOverlay,
 } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import React from "react";
 import { colors } from "theme";
 
 const CloseButton = styled(ModalCloseButton)`
