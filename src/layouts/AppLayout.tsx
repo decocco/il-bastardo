@@ -1,10 +1,12 @@
+import { Box } from "@chakra-ui/react";
+
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const AppLayout: React.FC = ({ children }) => (
   <>
     <Navbar />
-    {children}
+    <Box minH="calc(100vh - 216px)">{children}</Box>
     <Footer />
   </>
 );

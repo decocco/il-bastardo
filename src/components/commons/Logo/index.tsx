@@ -24,11 +24,11 @@ const shake = keyframes`
 `;
 
 const animation = css`
-  animation-name: ${shake};
   animation-duration: 0.15s;
-  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
   animation-fill-mode: both;
   animation-iteration-count: 3;
+  animation-name: ${shake};
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
 `;
 
 const Container = styled(Flex)`
