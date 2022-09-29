@@ -2,5 +2,15 @@
   "aboutme": "About Me",
   "blog": "Blog",
   "projects": "Projects",
-  "language": "english"
+  "language": "english",
+
+  "sendMeAMessage": "Send me a message!",
+  "name": "Name",
+  "email": "Email",
+  "comment": "Message",
+  "errorName": "The Name field can't be empty",
+  "errorEmail": "The Email format is not correct",
+  "errorComment": "The Message field can't be empty",
+  "save": "Save",
+  "cancel": "Cancel"
 }

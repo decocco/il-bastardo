@@ -48,7 +48,7 @@ export const Modal: React.FC<Props> = ({
     size={size}
   >
     <ModalOverlay />
-    <ModalContent borderRadius={4}>
+    <ModalContent borderRadius={16}>
       <ModalHeader
         color="darkPrimary"
         fontSize="24px"
@@ -59,7 +59,7 @@ export const Modal: React.FC<Props> = ({
       </ModalHeader>
       <CloseButton top="4" />
       <Box borderBottom="2px solid " borderColor="black" m={0} />
-      <ModalBody p="16px">{children}</ModalBody>
+      <ModalBody p="16px 32px">{children}</ModalBody>
     </ModalContent>
   </ChakraModal>
 );

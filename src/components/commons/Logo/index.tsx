@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Flex, keyframes,Text } from "@chakra-ui/react";
+import { Flex, keyframes, Text } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { useRouter } from "next/router";
@@ -61,7 +61,7 @@ export const Logo: React.FC<Props> = ({ ml, mr }) => {
 
   return (
     <Container
-      animate={animate}
+      animate={animate ? 1 : 0}
       ml={ml}
       mr={mr}
       onAnimationEnd={() => setAnimate(false)}

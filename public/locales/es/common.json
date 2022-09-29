@@ -2,5 +2,15 @@
   "aboutme": "Sobre mí",
   "blog": "Blog",
   "projects": "Proyectos",
-  "language": "español"
+  "language": "español",
+
+  "sendMeAMessage": "¡Envíame un mensaje!",
+  "name": "Nombre",
+  "email": "Email",
+  "comment": "Mensaje",
+  "errorName": "El campo Nombre no puede estar vacío",
+  "errorEmail": "El formato del Email no es correcto",
+  "errorComment": "El campo Mensaje no puede estar vacío",
+  "save": "Guardar",
+  "cancel": "Cancelar"
 }
