@@ -77,12 +77,17 @@ export const ContactModal: React.FC<Props> = ({
     return false;
   };
 
-  const fieldsAreValid = () =>
-    validateComment() && validateEmail() && validateName();
+  const fieldsAreValid = () => {
+    const nameIsValid = validateName();
+    const emailIsValid = validateEmail();
+    const commentIsValid = validateComment();
+    if (nameIsValid && emailIsValid && commentIsValid) return true;
+    return false;
+  };
 
   const onSave = () => {
     if (fieldsAreValid()) {
-      clearErrors();
+      // clearErrors();
       //TODO: add gql mutation
     }
   };
