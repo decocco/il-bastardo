@@ -45,20 +45,18 @@ const ExternalContainer = styled(Flex)`
   justify-content: center;
 `;
 
-export const LoadingSpinner: React.FC = () => {
-  return (
-    <ExternalContainer>
-      <InnerContainer>
-        <Text
-          color="white"
-          fontFamily="italic"
-          fontSize="30px"
-          position="relative"
-          top="2px"
-        >
-          IB
-        </Text>
-      </InnerContainer>
-    </ExternalContainer>
-  );
-};
+export const LoadingSpinner: React.FC = () => (
+  <ExternalContainer>
+    <InnerContainer>
+      <Text
+        color="white"
+        fontFamily="italic"
+        fontSize="30px"
+        position="relative"
+        top="2px"
+      >
+        IB
+      </Text>
+    </InnerContainer>
+  </ExternalContainer>
+);
