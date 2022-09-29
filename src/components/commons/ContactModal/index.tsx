@@ -78,7 +78,7 @@ export const ContactModal: React.FC<Props> = ({
   };
 
   const fieldsAreValid = () =>
-    validateComment() || validateEmail() || validateName();
+    validateComment() && validateEmail() && validateName();
 
   const onSave = () => {
     if (fieldsAreValid()) {
