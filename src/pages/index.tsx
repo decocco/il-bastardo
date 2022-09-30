@@ -11,12 +11,9 @@ const Home: NextPage = () => {
   );
 };
 
-export async function getStaticProps({ locale = defaultLocale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["common"])),
-    },
-  };
-}
-
+export const getStaticProps = async ({ locale = defaultLocale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 export default Home;
