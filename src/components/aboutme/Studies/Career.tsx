@@ -20,12 +20,10 @@ export const Career: React.FC<Props> = ({ dates, location, logo, title }) => (
     direction="row"
     h="100%"
     justify="center"
-    m="15px"
-    minW="500px"
-    p="10px"
-    w="500px"
+    p="10px 20px"
+    w="100%"
   >
-    <Image alt="name" height="100px" src={logo} />
+    <Image alt="name" height={{ base: "70px", sm: "100px" }} src={logo} />
     <Flex direction="column" ml="20px">
       <Text {...descriptiveText}>{title}</Text>
       <Text {...minorText}>{location}</Text>

@@ -56,7 +56,7 @@ const MainText = styled(Text)`
   font-size: 40px;
   padding-inline: 30px;
   @media (max-width: 480px) {
-    font-size: 20px;
+    font-size: 28px;
     padding-inline: 16px;
   }
 `;

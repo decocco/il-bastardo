@@ -5,15 +5,15 @@ export const fonts = {
 
 export const fontsStyle = {
   sectionTitle: {
-    fontSize: "40px",
+    fontSize: { base: "26px", sm: "34px", md: "40px" },
     color: "primary",
   },
   descriptiveText: {
-    fontSize: "20px",
+    fontSize: { base: "16px", sm: "20px" },
     color: "black",
   },
   minorText: {
-    fontSize: "16px",
+    fontSize: { base: "14px", sm: "16px" },
     color: "black",
   },
 };

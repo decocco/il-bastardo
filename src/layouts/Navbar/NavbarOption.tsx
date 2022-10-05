@@ -26,7 +26,7 @@ const Navbar: React.FC<Props> = ({ isLast = false, path }) => {
 
   return (
     <Container
-      mr={isLast ? "0px" : "50px"}
+      mr={isLast ? "0px" : "10vw"}
       onClick={() => router.push(`/${path}`)}
     >
       <Text>{t(path)}</Text>
