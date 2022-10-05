@@ -6,7 +6,9 @@ import Navbar from "./Navbar";
 const AppLayout: React.FC = ({ children }) => (
   <>
     <Navbar />
-    <Box minH="calc(100vh - 216px)">{children}</Box>
+    <Box minH="calc(100vh - 216px)" p="4vh 7vw">
+      {children}
+    </Box>
     <Footer />
   </>
 );

@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       direction="row"
       fontFamily="ubuntu"
       fontSize="20px"
-      px="100"
+      px="7vw"
       py="5"
     >
       <Logo mr="auto" />

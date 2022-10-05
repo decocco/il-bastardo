@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Javascript",
+    "grade": 100,
+    "logo": "/assets/techs/javascript.png",
+    "opinion": ""
+  },
+  {
+    "name": "Typescript",
+    "grade": 100,
+    "logo": "/assets/techs/typescript.png",
+    "opinion": ""
+  },
+  {
+    "name": "React",
+    "grade": 100,
+    "logo": "/assets/techs/react.png",
+    "opinion": ""
+  },
+  {
+    "name": "Next",
+    "grade": 100,
+    "logo": "/assets/techs/next.png",
+    "opinion": ""
+  },
+  {
+    "name": "React Native",
+    "grade": 75,
+    "logo": "/assets/techs/react-native.png",
+    "opinion": ""
+  },
+  {
+    "name": "Node",
+    "grade": 100,
+    "logo": "/assets/techs/node.png",
+    "opinion": ""
+  },
+  {
+    "name": "GraphQL",
+    "grade": 100,
+    "logo": "/assets/techs/gql.png",
+    "opinion": ""
+  },
+  {
+    "name": "Amazon Web Service",
+    "grade": 75,
+    "logo": "/assets/techs/aws.png",
+    "opinion": ""
+  },
+  {
+    "name": "Python",
+    "grade": 75,
+    "logo": "/assets/techs/python.png",
+    "opinion": ""
+  },
+  {
+    "name": "Django",
+    "grade": 75,
+    "logo": "/assets/techs/django.png",
+    "opinion": ""
+  },
+  {
+    "name": "Dart",
+    "grade": 75,
+    "logo": "/assets/techs/dart.png",
+    "opinion": ""
+  },
+  {
+    "name": "Flutter",
+    "grade": 75,
+    "logo": "/assets/techs/flutter.png",
+    "opinion": ""
+  },
+  {
+    "name": "MongoDB",
+    "grade": 75,
+    "logo": "/assets/techs/mongo.png",
+    "opinion": ""
+  }
+]
