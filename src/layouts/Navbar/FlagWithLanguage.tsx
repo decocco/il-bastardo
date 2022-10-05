@@ -1,6 +1,5 @@
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import { Flex, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Flex, Image, Text } from "@chakra-ui/react";
 
 type Props = {
   isEnglish: boolean;

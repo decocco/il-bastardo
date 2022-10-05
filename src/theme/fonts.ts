@@ -4,7 +4,7 @@ export const fonts = {
 };
 
 export const fontsStyle = {
-  centeredTitle: {
+  sectionTitle: {
     fontSize: "40px",
     color: "primary",
   },

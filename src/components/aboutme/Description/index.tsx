@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Image as ChakraImage, Text } from "@chakra-ui/react";
 import { fontsStyle } from "theme";
 
-const { centeredTitle, descriptiveText } = fontsStyle;
+const { sectionTitle, descriptiveText } = fontsStyle;
 
 export const Description: React.FC = () => {
   return (
@@ -25,7 +25,7 @@ export const Description: React.FC = () => {
       </Flex>
 
       <Flex alignSelf="center" direction="column" h="100%" mx="15px">
-        <Text align="center" mb="16px" {...centeredTitle}>
+        <Text align="center" mb="16px" {...sectionTitle}>
           Jeremy Galarce Urbina
         </Text>
         <Text align="justify" {...descriptiveText}>
