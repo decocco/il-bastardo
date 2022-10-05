@@ -13,7 +13,13 @@ export const TechIndicator: React.FC<Props> = ({ grade, logo, name }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Flex direction="row" justify="center" m="15px" minW="180px">
-      <Image alt="name" height="100px" onClick={onOpen} src={logo} />
+      <Image
+        alt={name}
+        filter="saturate(0.4)"
+        height="100px"
+        onClick={onOpen}
+        src={logo}
+      />
       <TechModal
         grade={grade}
         isOpen={isOpen}

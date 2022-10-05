@@ -9,7 +9,11 @@ export const fontsStyle = {
     color: "primary",
   },
   descriptiveText: {
-    fontSize: "18px",
+    fontSize: "20px",
+    color: "black",
+  },
+  minorText: {
+    fontSize: "16px",
     color: "black",
   },
 };

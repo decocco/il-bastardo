@@ -1,0 +1,30 @@
+{
+  "en": [
+    {
+      "title": "Master in Engineering Sciences",
+      "location": "Pontificia Universidad Católica de Chile",
+      "dates": "2019 - 2022",
+      "logo": "/assets/aboutme/puc.png"
+    },
+    {
+      "title": "Civil Engineer of Industry, diploma in  Information Technologies Engineering",
+      "location": "Pontificia Universidad Católica de Chile",
+      "dates": "2014 - 2022",
+      "logo": "/assets/aboutme/puc.png"
+    }
+  ],
+  "es": [
+    {
+      "title": "Magíster en Ciencias de la Ingeniería",
+      "location": "Pontificia Universidad Católica de Chile",
+      "dates": "2019 - 2022",
+      "logo": "/assets/aboutme/puc.png"
+    },
+    {
+      "title": "Ingeniería Civil Industrial, diploma en Tecnologías de la Información",
+      "location": "Pontificia Universidad Católica de Chile",
+      "dates": "2014 - 2022",
+      "logo": "/assets/aboutme/puc.png"
+    }
+  ]
+}

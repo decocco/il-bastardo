@@ -18,7 +18,7 @@ export const Description: React.FC = () => {
           <ChakraImage
             alt="myslef"
             height="300px"
-            src="/assets/myself.jpeg"
+            src="/assets/aboutme/myself.jpeg"
             width="300px"
           />
         </Flex>

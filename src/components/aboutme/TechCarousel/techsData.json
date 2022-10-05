@@ -12,15 +12,15 @@
     "opinion": ""
   },
   {
-    "name": "Next",
-    "grade": 100,
-    "logo": "/assets/techs/next.png",
-    "opinion": ""
-  },
-  {
     "name": "React",
     "grade": 100,
     "logo": "/assets/techs/react.png",
+    "opinion": ""
+  },
+  {
+    "name": "Next",
+    "grade": 100,
+    "logo": "/assets/techs/next.png",
     "opinion": ""
   },
   {
