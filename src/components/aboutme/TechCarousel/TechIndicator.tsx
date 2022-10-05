@@ -12,11 +12,11 @@ type Props = {
 export const TechIndicator: React.FC<Props> = ({ grade, logo, name }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Flex direction="row" justify="center" m="15px" minW="180px">
+    <Flex direction="row" justify="center" m="15px" minW="150px">
       <Image
         alt={name}
-        filter="saturate(0.4)"
-        height="100px"
+        filter="saturate(0.75)"
+        height="90px"
         onClick={onOpen}
         src={logo}
       />
