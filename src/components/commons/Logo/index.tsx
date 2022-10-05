@@ -3,7 +3,7 @@ import { Flex, keyframes, Text } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { useRouter } from "next/router";
-import { colors } from "theme";
+import { colors, fonts } from "theme";
 
 type Props = {
   ml?: string;
@@ -39,12 +39,26 @@ const Container = styled(Flex)`
   border-radius: 100px;
   cursor: pointer;
   justify-content: center;
-  min-width: 300px;
   margin-left: ${({ ml }) => ml};
   margin-right: ${({ mr }) => mr};
   padding-left: 10px;
   padding-right: 10px;
   transform: rotate(-7deg);
+  @media (max-width: 480px) {
+    border: 2px solid;
+    border-color: ${colors.white};
+  }
+`;
+
+const MainText = styled(Text)`
+  color: ${colors.white};
+  font-family: ${fonts.italic};
+  font-size: 40px;
+  padding-inline: 30px;
+  @media (max-width: 480px) {
+    font-size: 20px;
+    padding-inline: 16px;
+  }
 `;
 
 export const Logo: React.FC<Props> = ({ ml, mr }) => {
@@ -67,9 +81,7 @@ export const Logo: React.FC<Props> = ({ ml, mr }) => {
       onAnimationEnd={() => setAnimate(false)}
       onClick={shouldAnimate}
     >
-      <Text color="white" fontFamily="italic" fontSize="40px">
-        Il Bastardo
-      </Text>
+      <MainText>Il Bastardo</MainText>
     </Container>
   );
 };
