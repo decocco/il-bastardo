@@ -1,14 +1,24 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { Flex, IconButton, Show, useDisclosure } from "@chakra-ui/react";
+import styled from "@emotion/styled";
 
 import { Logo } from "components/commons/Logo";
-import { useWindowSize } from "components/hooks";
 
+import Drawer from "./Drawer";
 import LanguageSelector from "./LanguageSelector";
 import NavbarOptions from "./NavbarOptions";
 
+const BurgerIcon = styled(IconButton)`
+  align-self: center;
+  font-size: 20px;
+  :focus {
+    box-shadow: none;
+  }
+`;
+
 const Navbar: React.FC = () => {
-  const { width } = useWindowSize();
-  if (!width) return <Flex>asd</Flex>;
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Flex
       bg="black"
@@ -19,14 +29,19 @@ const Navbar: React.FC = () => {
       py="5"
     >
       <Logo mr="auto" />
-      {width < 1024 ? (
-        <Text>Navbar</Text>
-      ) : (
-        <>
-          <NavbarOptions />
-          <LanguageSelector />
-        </>
-      )}
+      <Show breakpoint="(max-width: 1023px)">
+        <BurgerIcon
+          aria-label="BurgerIcon"
+          bg="white"
+          icon={<HamburgerIcon color="black" />}
+          onClick={onOpen}
+        />
+      </Show>
+      <Show breakpoint="(min-width: 1024px)">
+        <NavbarOptions />
+        <LanguageSelector />
+      </Show>
+      <Drawer isOpen={isOpen} onClose={onClose} />
     </Flex>
   );
 };
