@@ -11,6 +11,8 @@ import SocialNetworks from "layouts/Footer/SocialNetworks";
 import { useRouter } from "next/router";
 import { colors } from "theme";
 
+import { useGralContext } from "components/context";
+
 import FlagWithLanguage from "./FlagWithLanguage";
 import NavbarOptions from "./NavbarOptions";
 
@@ -31,6 +33,7 @@ type Props = {
 };
 
 const Drawer: React.FC<Props> = ({ isOpen, onClose }) => {
+  const { onOpenContactModal } = useGralContext();
   const router = useRouter();
 
   const selectLanguage = (language: string) => () => {
@@ -78,12 +81,7 @@ const Drawer: React.FC<Props> = ({ isOpen, onClose }) => {
           </Flex>
         </Flex>
         <Flex>
-          <SocialNetworks
-            isInDrawer
-            onMailOpen={() => {
-              return;
-            }}
-          />
+          <SocialNetworks isInDrawer onMailOpen={onOpenContactModal} />
         </Flex>
       </DrawerContent>
     </ChakraDrawer>
