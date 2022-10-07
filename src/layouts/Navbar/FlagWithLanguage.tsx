@@ -21,7 +21,9 @@ const FlagWithLanguage: React.FC<Props> = ({
       src={isEnglish ? "/assets/eng.png" : "/assets/esp.png"}
       width="40px"
     />
-    <Text px="10px">{isEnglish ? "English" : "Español"}</Text>
+    <Text fontSize={22} px="10px">
+      {isEnglish ? "English" : "Español"}
+    </Text>
     {withChevron && <ChevronDownIcon fontSize="22px" />}
   </Flex>
 );

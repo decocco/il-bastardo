@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text, Wrap, WrapItem } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { fontsStyle } from "theme";
@@ -25,13 +25,20 @@ export const Studies: React.FC = () => {
   const studies = studiesData[router.locale as Languages] as Array<CareerType>;
 
   return (
-    <Flex direction="column" mt="40px" px="20px">
+    <Flex direction="column" mt="40px" px="2vw">
       <Text align="left" {...sectionTitle}>
         {t("academicBackground")}
       </Text>
-      {studies.map((career: CareerType) => (
-        <Career key={career.title} {...career} />
-      ))}
+      <Wrap justify="center" mt="20px" spacing="30px">
+        {studies.map((career: CareerType) => (
+          <WrapItem
+            key={career.title}
+            w={{ base: "100%", sm: "450px", md: "600px" }}
+          >
+            <Career {...career} />
+          </WrapItem>
+        ))}
+      </Wrap>
     </Flex>
   );
 };

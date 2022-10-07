@@ -12,8 +12,18 @@ type Props = {
 };
 
 export const Career: React.FC<Props> = ({ dates, location, logo, title }) => (
-  <Flex alignItems="center" direction="row" m="15px" minW="180px">
-    <Image alt="name" height="100px" src={logo} />
+  <Flex
+    alignItems="center"
+    border="1px solid"
+    borderColor="black"
+    borderRadius={16}
+    direction="row"
+    h="100%"
+    justify="center"
+    p="10px 20px"
+    w="100%"
+  >
+    <Image alt="name" height={{ base: "70px", sm: "100px" }} src={logo} />
     <Flex direction="column" ml="20px">
       <Text {...descriptiveText}>{title}</Text>
       <Text {...minorText}>{location}</Text>
