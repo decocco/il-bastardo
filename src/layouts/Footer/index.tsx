@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
-import { Flex, Show } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 
 import { ContactModal } from "components/commons/ContactModal";
 import { Logo } from "components/commons/Logo";
 import { useGralContext } from "components/context";
+import { useWindowSize } from "components/hooks";
 
 import SocialNetworks from "./SocialNetworks";
 
@@ -11,6 +12,9 @@ const Footer: React.FC = () => {
   const initialRef = useRef(null);
   const { isOpenContactModal, onCloseContactModal, onOpenContactModal } =
     useGralContext();
+  const { width } = useWindowSize();
+  if (!width) return <></>;
+
   return (
     <>
       <Flex
@@ -23,10 +27,7 @@ const Footer: React.FC = () => {
         px={{ base: "3vw", sm: "7vw" }}
         py="5"
       >
-        <Show breakpoint="(min-width: 1024px)">
-          <SocialNetworks onMailOpen={onOpenContactModal} />
-        </Show>
-
+        {width >= 1024 && <SocialNetworks onMailOpen={onOpenContactModal} />}
         <Logo ml="auto" />
       </Flex>
       <ContactModal
